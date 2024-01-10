@@ -2,6 +2,9 @@
 
 Internsctl is a custom Linux command designed to facilitate various operations on a Linux system. It provides functionalities related to CPU, memory, user management, and file information.
 
+
+## XenonStack Assignment 1.docx file consists all the working screenshot with commands
+
 ## Table of Contents
 
 - [Installation](#installation)
