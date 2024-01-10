@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# Set absolute path to the internsctl directory
+INTERN_DIR=~/Desktop/project/internsctl
+
+case "$1" in
+    --help)
+        cat "$INTERN_DIR/man/internsctl.1"
+        ;;
+    --version)
+        echo "internsctl v0.1.0"
+        ;;
+    cpu)
+        shift
+        "$INTERN_DIR/src/cpu.sh" "$@"
+        ;;
+    memory)
+        shift
+        "$INTERN_DIR/src/memory.sh" "$@"
+        ;;
+    user)
+        shift
+        "$INTERN_DIR/src/user.sh" "$@"
+        ;;
+    file)
+        shift
+        "$INTERN_DIR/src/file.sh" "$@"
+        ;;
+    *)
+        echo "Error: Unknown command. Use '--help' for usage information."
+        exit 1
+        ;;
+esac
+
